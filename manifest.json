@@ -1,0 +1,37 @@
+{
+ "name": "Wiki Chrome", // Название расширения
+ "version": "1.0", // Номер версии
+ "description": "Extention for Wikipedia", // Описание расширения
+
+ "icons": {
+    "48":"images/icon_48.png",
+    "128":"images/icon_128.png"
+  },
+
+"background": {
+	"scripts" : ["bg.js"]
+  },
+
+ "permissions": [
+  "tabs", // Разрешить расширению работать с вкладками
+  "https://ru.wikipedia.org/*", // Разрешить расширению обращаться к указанному адресу
+  "webNavigation"
+ ],
+
+ "page_action" :
+	  {
+	    "default_icon" : "images/icon.png",
+	    "default_title" : "There's a <video> in this page!"
+	  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://ru.wikipedia.org/*"],
+      "js": ["jquery.js", "script.js"],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ],
+
+ "manifest_version": 2
+}
