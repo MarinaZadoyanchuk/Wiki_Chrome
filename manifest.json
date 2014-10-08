@@ -14,7 +14,7 @@
 
  "permissions": [
   "tabs", // Разрешить расширению работать с вкладками
-  "https://ru.wikipedia.org/*", // Разрешить расширению обращаться к указанному адресу
+  "*://*.wikipedia.org/*", // Разрешить расширению обращаться к указанному адресу
   "webNavigation"
  ],
 
@@ -26,8 +26,9 @@
 
   "content_scripts": [
     {
-      "matches": ["https://ru.wikipedia.org/*"],
+      "matches": ["*://*.wikipedia.org/*"],
       "js": ["jquery.js", "script.js"],
+      "css" : ["script.css"],
       "run_at": "document_end",
       "all_frames": true
     }

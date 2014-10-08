@@ -1,0 +1,35 @@
+.link_popup
+{
+	display: none;
+	position:fixed;
+	bottom: 20px;
+	left: 4px;
+	width: 250px;
+	min-height: 100px;
+	font-size: 12px;
+	background:#F2EA7E;
+	word-wrap:break-word;
+    border:1px solid #642704;
+   	box-shadow: 0px 0px 22px 1px #808080;
+    z-index: 9002;
+}
+.link_popup p
+{	
+	position: relative;
+    margin: 10px;
+}
+.link_popup .loadImg
+{
+	margin: auto;
+}
+.close_popup
+{
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	position: relative;
+	margin-right: 0px;
+	margin-top: 0px;
+	font-size: 20px;
+	background: #fff;
+}

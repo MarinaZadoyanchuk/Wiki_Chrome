@@ -14,12 +14,3 @@ chrome.tabs.onUpdated.addListener(function(id, info, tab) {
 }); 
 
 
-// chrome.tabs.executeScript(null,{file:"script.js"});   
-// chrome.tabs.onUpdated.addListener(function(details) {
-    
-//     chrome.tabs.executeScript(null,{file:"script.js"});
-// });
-
-// chrome.webNavigation.onHistoryStateUpdated.addListener( function ( details )  { 
-//     chrome.tabs.executeScript( null ,{ file : "script.js" }); 
-// });
